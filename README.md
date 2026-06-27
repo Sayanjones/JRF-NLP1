@@ -36,7 +36,7 @@ pip install pandas openpyxl sacrebleu anthropic
 - Extracts English and Hindi sentences into two columns
 - Computes word counts for both languages
 - Filters sentences where both word counts are in range **[5, 50]**
-- Filters pairs where word count difference (English − Hindi) is in **[-10, +10]**
+- Filters pairs where word count difference (English - Hindi) is in **[-10, +10]**
 - Saves the cleaned dataset to Excel with 5 columns
 
 ### How to run
@@ -74,10 +74,10 @@ python assignment1.py
 
 ```bash
 # On Linux/Mac
-export ANTHROPIC_API_KEY="your_api_key_here"
+export ANTHROPIC_API_KEY="api_key_here"
 
 # On Windows (Command Prompt)
-set ANTHROPIC_API_KEY=your_api_key_here
+set ANTHROPIC_API_KEY=api_key_here
 ```
 
 4. Run:
@@ -87,8 +87,8 @@ python assignment2.py
 ```
 
 5. Output files generated:
-   - `assignment2_translations.xlsx` — Column A: English, Column B: Hindi translation
-   - `assignment2_metrics.txt` — BLEU, CHRF, TER scores
+   - `assignment2_translations.xlsx` - Column A: English, Column B: Hindi translation
+   - `assignment2_metrics.txt` - BLEU, CHRF, TER scores
 
 ---
 
@@ -102,11 +102,11 @@ python assignment2.py
 
 - **BLEU**: Measures n-gram precision between predicted and reference translations
 - **CHRF**: Character-level F-score, more sensitive to morphological differences
-- **TER**: Translation Edit Rate — number of edits needed to match the reference
+- **TER**: Translation Edit Rate - number of edits needed to match the reference
 
 ---
 
 ## Notes
 
 - Run Assignment 1 **before** Assignment 2
-- Do **not** modify the output Excel files after submission — any changes post-assessment are treated as violations per the assignment instructions
+- Do **not** modify the output Excel files after submission - any changes post-assessment are treated as violations per the assignment instructions
