@@ -10,6 +10,7 @@
 ```
 ├── assignment1.py                # Assignment 1: Dataset processing code
 ├── assignment2.py                # Assignment 2: LLM translation code
+├── assignment2.ipynb             # Assignment 2: LLM translation code(Google.Colab)
 ├── Dataset_English_Hindi.csv     # Input dataset (download from Kaggle)
 ├── assignment1_output.xlsx       # Final Excel output for Assignment 1
 ├── assignment2_translations.xlsx # Final Excel output for Assignment 2
