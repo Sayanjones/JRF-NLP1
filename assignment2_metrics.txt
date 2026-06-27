@@ -1,0 +1,15 @@
+==================================================
+Assignment 2: Translation Evaluation Metrics
+==================================================
+
+Model Used  : Helsinki-NLP/opus-mt-en-hi (HuggingFace)
+Sentences   : 100 (sampled from Assignment 1 output)
+
+BLEU Score  : 6.1239
+CHRF Score  : 26.2344
+TER Score   : 85.6576
+
+Metric Notes:
+  BLEU : Higher is better (0-100). N-gram overlap precision.
+  CHRF : Higher is better (0-100). Character n-gram F-score.
+  TER  : Lower is better. Minimum edits to match reference.
