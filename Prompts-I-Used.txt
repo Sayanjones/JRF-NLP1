@@ -1,0 +1,44 @@
+# JRF-NLP1
+
+## Assignment-1's Prompts:
+
+Prompt 1 - Load the dataset:
+
+I have an English-Hindi parallel dataset CSV file. Load it and extract it into two columns: Column A for English sentences and Column B for Hindi sentences. Drop any empty or null rows.
+
+Prompt 2 - Word count analysis:
+
+For each sentence pair, compute the word count for both English and Hindi sentences. Then filter and keep only those pairs where both the English and Hindi sentence word counts fall within the range of 5 to 50 words.
+
+Prompt 3 - Difference filter:
+
+Calculate the difference between the English word count and Hindi word count for each pair. Retain only those rows where this difference lies within the range of -10 to +10.
+
+Prompt 4 - Final output:
+
+Save the cleaned dataset as an Excel file with the following five columns: English Sentences, Hindi Sentences, Word Count (English), Word Count (Hindi), and Difference between Word Count (English) and Word Count (Hindi).
+
+
+## Assignment-2's Prompts:
+
+
+Prompt 1 - Select sentences:
+
+From the cleaned dataset prepared in Assignment 1, randomly select 100 English sentences along with their reference Hindi translations for evaluation.
+
+Prompt 2 - Translate using LLM:
+
+Use Claude claude-sonnet-4-6 (Anthropic LLM) to translate the 100 selected English sentences into Hindi. Send them in batches of 10 and return the translations as a JSON array in the same order.
+
+Prompt 3 - Compute evaluation metrics:
+
+Calculate BLEU, CHRF, and TER scores by comparing the model-generated Hindi translations against the reference Hindi translations from the dataset using the sacrebleu library.
+
+Prompt 4 - Save metrics:
+
+Save the BLEU, CHRF, and TER evaluation scores along with the model name and number of sentences into a .txt file with clear labels and metric descriptions.
+
+Prompt 5 - Save translations to Excel:
+
+Save the 100 translated sentence pairs to an Excel file with Column A as the Original English Sentence and Column B as the Model-Generated Hindi Translation. Apply proper formatting with bold headers and freeze the top row.
+
